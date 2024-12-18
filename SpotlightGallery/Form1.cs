@@ -17,6 +17,7 @@ namespace SpotlightGallery {
 
     public Form1() {
       InitializeComponent();
+      AutoScaleMode = AutoScaleMode.None;
 
       contextMenu.Items.Add(
         "Save as...", null,
@@ -114,16 +115,16 @@ namespace SpotlightGallery {
     private void Form1_Load( object sender, EventArgs e ) {
       if ( Directory.Exists( lockscreenPicPath ) ) {
         string[] lockscreenPics = Directory.GetFiles( lockscreenPicPath, "*.*", SearchOption.AllDirectories );
-        DrawImages( lockscreenPics, tag: "Lock Screen" );
+        DrawImages( lockscreenPics, tag: "Lock Screen", imageWidth: 400 );
       }
       if ( Directory.Exists( desktopPicPath ) ) {
         string[] desktopPics = Directory.GetFiles( desktopPicPath , "*.*", SearchOption.AllDirectories );
-        DrawImages( desktopPics, tag: "Desktop" );
+        DrawImages( desktopPics, tag: "Desktop", imageWidth: 400 );
       }
 
       this.Size = new Size(
-        width: 320 * 4,
-        height: 180 * 4
+        width: 425 * 4,
+        height: 285 * imagePanel.Controls.Count / 4
       );
     }
   }

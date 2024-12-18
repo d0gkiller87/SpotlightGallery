@@ -27,11 +27,11 @@
       this.imagePanel = new System.Windows.Forms.FlowLayoutPanel();
       this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
       this.SuspendLayout();
-      //
+      // 
       // imagePanel
-      //
-      this.imagePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+      // 
+      this.imagePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.imagePanel.AutoScroll = true;
       this.imagePanel.BackColor = System.Drawing.Color.White;
@@ -39,17 +39,17 @@
       this.imagePanel.Name = "imagePanel";
       this.imagePanel.Size = new System.Drawing.Size(776, 426);
       this.imagePanel.TabIndex = 1;
-      //
+      // 
       // saveFileDialog1
-      //
+      // 
       this.saveFileDialog1.CheckPathExists = false;
       this.saveFileDialog1.DefaultExt = "jpg";
       this.saveFileDialog1.Filter = "JPEG Files|*.jpg;*.jpeg|All Files|*";
       this.saveFileDialog1.RestoreDirectory = true;
       this.saveFileDialog1.Title = "Save image to...";
-      //
+      // 
       // Form1
-      //
+      // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 450);
